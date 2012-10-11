@@ -23,15 +23,31 @@ public class InputClass {
     System.out.printf("%s | %d %n", name, age);
       */
         File someFile = new File ("someFile .txt");
-        PrintWriter pw = new PrintWriter ( someFile );
-        pw.write ("One \n");
-        pw.write ("Two \n");
-        pw.write ("Three \n");
-        pw.flush ();
+        //PrintWriter pw = new PrintWriter ( someFile );
+        //pw.write ("One \n");
+        //pw.write ("Two \n");
+        //pw.write ("Three \n");
+        //pw.flush ();
+        //pw.close();
+
         Scanner infile = new Scanner ( someFile );
-        System.out.println (infile.nextLine ());
-        System.out.println (infile.nextLine ());
-        System.out.println (infile.nextLine ());
-        pw.close();
+        System.out.println(infile.nextLine());
+        System.out.println(infile.nextLine());
+        System.out.println(infile.nextLine());
+
+
+        /*
+        StringBuffer newstring = new StringBuffer() ;
+        newstring.append("Nikolay");
+        System.out.printf("%s",newstring.toString().toUpperCase().substring(0,2));
+        */
+
+        int startValue = 1;
+        int numbersNotDivideableByThree = 0;
+        for (int i = startValue ; i < 10; i++) {
+             if (i % 3 == 0) continue ;
+             numbersNotDivideableByThree ++;
+        }
+        System.out.println(numbersNotDivideableByThree);
     }
 }
