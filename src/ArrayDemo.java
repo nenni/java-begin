@@ -9,14 +9,13 @@ import java.util.Arrays;
  */
 public class ArrayDemo {
         public static void main ( String [ ] args ) {
-        int [ ] anArray ; // d e c l a r e s an ar ray o f i n t e g e r s
+        int[] anArray ; // declares an array of integers
 
-        anArray = new int[10] ; // a l l o c a t e s memory f o r 10 i n t e g e r s
+        anArray = new int[10] ; // allocates memory for 10 integers
 
-        anArray [ 0 ] = 100; // i n i t i a l i z e f i r s t element
-        anArray [ 1 ] = 200; // i n i t i a l i z e second element
-        anArray [ 2 ] = 300; // e t c .
-
+        anArray [ 0 ] = 100; // initialize first element
+        anArray [ 1 ] = 200; // etc.
+        anArray [ 2 ] = 300; // etc .
 
          System . out . println ( "Element at index 0 : " + anArray [ 0 ] ) ;
          System . out . println ( "Element at index 1 : " + anArray [ 1 ] ) ;
@@ -25,11 +24,12 @@ public class ArrayDemo {
          Arrays.sort(anArray);
          System.out.println(Arrays.toString(anArray));
 
-            if (Arrays.binarySearch(anArray,100) > 0){
+            int zx = 1000;
+            if (Arrays.binarySearch(anArray,zx) > 0){
                 System.out.println("100 e v masiv anArray");
             }
             else{
-                System.out.println("100 ne e v masiva");
+                System.out.println(zx + " ne e v masiva");
             }
 
 

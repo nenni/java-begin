@@ -17,6 +17,14 @@ public class Address {
 
 
         // The constructor method
+
+    /**
+     *
+     * @param country
+     * @param city
+     * @param street
+     * @param streetNo
+     */
        public  Address(String country, String city, String street, int streetNo) {
             this.country = country;
             this.city = city;
@@ -52,8 +60,8 @@ public class Address {
         this.city = "Sofia";
         this.street = "Central";
         this.streetNo = 1000;
-
     }
+
 
     /**
      *

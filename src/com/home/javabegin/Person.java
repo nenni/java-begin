@@ -44,6 +44,9 @@ public class Person extends Address {
 
     }
 
+    public Person() {
+
+    }
     public void displayPersonDetails() {
 
         System.out.println("Name: " + name);
@@ -87,8 +90,12 @@ public class Person extends Address {
      *
      * @return override Address class method getAddress()
      */
+    /*
     public String getAddress(){
         String address = getCountry().toString() + " override";
         return address;
     }
+    */
+
+
 }

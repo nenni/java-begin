@@ -1,6 +1,8 @@
 import java.util.*;
 import com.home.javabegin.*;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
+
 /**
  * Created with IntelliJ IDEA.
  * User: nenchevn
@@ -31,9 +33,39 @@ public class PersonExample {
 
         System.out.println(np2.getAddress());
 
+        Person np3 = new Person();
+        System.out.println(np3.getAddress().toString());
+
+
+        if(!np3.getAddress().equals(np3.getAddress())){
+            System.out.println("greshka!!!");
+        }
+
+        Random radNumber = new Random();
+        np3.setAge(radNumber.nextInt(100));
+        System.out.println(np3.getAge());
+        /*
+        np3.getName();
+        np3.getAddress();
+
+        if (np3 instanceof Address)    {
+            Address p = (Address) np3;
+            System.out.println(p.getAddress());
+            System.out.println(p.getClass().toString());
+            System.out.println(p.toString());
+            System.out.println(p.hashCode());
+        }
+          */
+
+
+        /*
         Employee emp1 = new Employee("Nikolay",32,"CEO","BOSS");
         System.out.println(emp1.getEmployee());
         System.out.println(emp1.getAge());
+        System.out.println(emp1.getPosition());
+          */
+
+
 
 
         /*

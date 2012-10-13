@@ -7,6 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <javadoc-paths>
+      <root url="file://$MODULE_DIR$/doc" />
+    </javadoc-paths>
   </component>
 </module>
 

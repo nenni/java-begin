@@ -11,8 +11,8 @@ import java.util.Date;
  */
 public class Employee extends Person {
 
-    private String position;
-    private String depart;
+    private String position = null;
+    private String depart = null;
 
     /**
      *
@@ -28,6 +28,9 @@ public class Employee extends Person {
 
     }
 
+    public Employee() {
+        //super();
+    }
     /**
      *
      * @param name
@@ -57,5 +60,13 @@ public class Employee extends Person {
         return (getName()+ " | " + getAge() + " | " + position + " | " + depart);
     }
 
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
 
 }
