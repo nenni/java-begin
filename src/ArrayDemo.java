@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created with IntelliJ IDEA.
  * User: nenchevn
@@ -15,17 +17,28 @@ public class ArrayDemo {
         anArray [ 1 ] = 200; // i n i t i a l i z e second element
         anArray [ 2 ] = 300; // e t c .
 
+
          System . out . println ( "Element at index 0 : " + anArray [ 0 ] ) ;
          System . out . println ( "Element at index 1 : " + anArray [ 1 ] ) ;
          System . out . println ( "Element at index 2 : " + anArray [ 2 ] ) ;
-         System . out . println ( "Element at index 2 : " + anArray [ 3 ] ) ;
+
+         Arrays.sort(anArray);
+         System.out.println(Arrays.toString(anArray));
+
+            if (Arrays.binarySearch(anArray,100) > 0){
+                System.out.println("100 e v masiv anArray");
+            }
+            else{
+                System.out.println("100 ne e v masiva");
+            }
 
 
          String [] names = { "Pesho", "Gosho", "Ivan" };
          System.out.println(names.length);
+         System.out.println(Arrays.toString(names));
 
          for (int i=0; i < (names.length) ; i++) {
-              System.out.printf ("Name : %s%n", names [i]);
+              System.out.printf("Name : %s%n", names[i]);
               }
          }
      }
