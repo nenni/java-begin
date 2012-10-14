@@ -42,6 +42,30 @@ public class PersonExample {
         Random radNumber = new Random();
         np3.setAge(radNumber.nextInt(100));
         System.out.println(np3.getAge());
+        
+        
+        Employee np5 = new Employee("Nikolay",20,"Employee","Management");
+        Employee np4 = new Employee("Agi",30,"Employee","Management");
+        np4.displayPersonDetails();
+        
+        np4.compareName(np5);
+        if (np5.compareTo(np4)== -1) {
+        	System.out.println(np5.getName() + " is older than " + np4.getName());
+        }else if (np5.compareTo(np4)== 1) {
+        	System.out.println(np5.getName() + " is younder than " + np4.getName());		
+		}else {
+        	System.out.println(np5.getName() + " has the same age as " + np4.getName());
+		}
+        
+        Employee[] arrayEmp = {np5,np4};
+        Arrays.sort(arrayEmp);
+        System.out.printf("%s and %s\n",arrayEmp[0].getName(),arrayEmp[1].getName());
+        
+        
+        Employee np6 = np4;
+        System.out.println(np6.toString() + "\n" + np4.toString());
+        
+        
         /*
         np3.getName();
         np3.getAddress();

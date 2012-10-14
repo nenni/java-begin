@@ -9,7 +9,9 @@ import java.util.Date;
  * Time: 12:01 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Employee extends Person {
+public class Employee extends Person 
+implements CompareEmployee<Employee>,Comparable<Employee>		
+	{
 
     private String position = null;
     private String depart = null;
@@ -68,5 +70,29 @@ public class Employee extends Person {
     public void setPosition(String position) {
         this.position = position;
     }
+
+	@Override
+	public void compareName(Employee other) {
+		// TODO Auto-generated method stub
+		if(getName().equals(other.getName())) {
+			System.out.println("First name: " + getName() + " is the same as second name: " + other.getName());
+		}
+		if(!getName().equals(other.getName())) {
+			System.out.println("First name: " + getName() + " is NOT the same as second name: " + other.getName());
+		}
+	}
+
+	@Override
+	public int compareTo(Employee o) {
+		final int OLDER = -1;
+		final int YOUNGER = 1;
+		final int EQUAL = 0;
+		
+		if(this.getAge()>o.getAge()) return OLDER;
+		if(this.getAge()<o.getAge()) return YOUNGER;
+		if(this.getAge()==o.getAge()) return EQUAL;
+		return EQUAL;
+	}
+
 
 }
