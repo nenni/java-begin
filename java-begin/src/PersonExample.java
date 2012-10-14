@@ -1,8 +1,6 @@
 import java.util.*;
 import com.home.javabegin.*;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
-
 /**
  * Created with IntelliJ IDEA.
  * User: nenchevn
@@ -37,7 +35,7 @@ public class PersonExample {
         System.out.println(np3.getAddress().toString());
 
 
-        if(!np3.getAddress().equals(np3.getAddress())){
+        if(!np3.getAddress().equals(np2.getAddress())){
             System.out.println("greshka!!!");
         }
 

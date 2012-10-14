@@ -12,10 +12,10 @@ public class CountNumbers {
 
        // String[] numbers = {"one", "two"};
 
-        for (String numbers : new String[]{"one", "two"})  {
+        //for (String numbers : new String[]{"one", "two"})  {
 
             //numbers =
-        }
+        //}
 
 
         int sum = 0;
